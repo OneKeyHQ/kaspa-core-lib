@@ -93,7 +93,7 @@ declare module '@onekeyfe/kaspacore-lib' {
 	export namespace Transaction {
 
 		static class sighash {
-			static sign(transaction, privateKey, sighashType, inputIndex, subscript, satoshisBN, flags, signingMethod);
+			// static sign(transaction, privateKey, sighashType, inputIndex, subscript, satoshisBN, flags, signingMethod);
 			static sighash(transaction, sighashType, inputNumber, subscript, satoshisBN, flags): Buffer;
 		}
 		class UnspentOutput {
@@ -155,7 +155,7 @@ declare module '@onekeyfe/kaspacore-lib' {
 		fee(amount: number): this;
 		setVersion(version: number): this;
 		feePerKb(amount: number): this;
-		sign(privateKey: PrivateKey|PrivateKey[] | string|string[], sigtype:number, signingMethod:string|undefined): this;
+		// sign(privateKey: PrivateKey|PrivateKey[] | string|string[], sigtype:number, signingMethod:string|undefined): this;
 		applySignature(sig: crypto.Signature): this;
 		addInput(input: Transaction.Input): this;
 		addOutput(output: Transaction.Output): this;
