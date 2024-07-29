@@ -103,7 +103,7 @@ declare module '@onekeyfe/kaspacore-lib' {
 			readonly txId: string;
 			readonly outputIndex: number;
 			readonly script: Script;
-			readonly satoshis: number;
+			readonly satoshis: number | string;
 
 			constructor(data: object);
 
@@ -114,7 +114,8 @@ declare module '@onekeyfe/kaspacore-lib' {
 
 		class Output {
 			readonly script: Script;
-			readonly satoshis: number;
+			readonly satoshis: number | string;
+			readonly satoshisBN: crypto.BN;
 
 			constructor(data: object);
 
@@ -149,7 +150,7 @@ declare module '@onekeyfe/kaspacore-lib' {
 		constructor(serialized ? : any);
 
 		from(utxos: Transaction.UnspentOutput[]): this;
-		to(address: Address[] | Address | string, amount: number): this;
+		to(address: Address[] | Address | string, amount: number | string): this;
 		change(address: Address | string): this;
 		fee(amount: number): this;
 		setVersion(version: number): this;
