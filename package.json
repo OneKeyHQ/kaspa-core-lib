@@ -1,6 +1,6 @@
 {
   "name": "@onekeyfe/kaspa-core-lib",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0",
   "main": "index.js",
   "authors": [
     {
