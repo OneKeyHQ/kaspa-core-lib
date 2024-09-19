@@ -164,6 +164,8 @@ declare module '@onekeyfe/kaspa-core-lib' {
 		lockUntilBlockHeight(height: number): this;
 
 		getMassAndSize():{txSize:number, mass:number};
+		calcStorageMass():number;
+		calcComputeMass():number;
 
 		hasWitnesses(): boolean;
 		getFee(): number;
