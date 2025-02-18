@@ -84,6 +84,7 @@ declare module '@onekeyfe/kaspa-core-lib' {
 	export class Script {
 		constructor(script ? : Script);
 		static buildPublicKeyHashIn(publicKey: PublicKey, signature: Signature, sigtype): Script;
+    static buildPublicKeyIn(signature: Signature, sigtype): Script;
 		static empty(): Script;
 		inspect():string;
 		toBuffer():Buffer;
