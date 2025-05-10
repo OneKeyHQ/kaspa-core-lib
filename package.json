@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@noble/hashes": "1.1.5",
-    "@noble/secp256k1": "1.7.1",
+    "@noble/secp256k1": "1.7.2",
     "bn.js": "=4.11.8",
     "bs58": "^4.0.1",
     "buffer-compare": "=1.1.1",
